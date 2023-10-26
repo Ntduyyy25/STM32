@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"button_long_press\startup_stm32f103xb.o"
+"button_long_press\main.o"
+"button_long_press\stm32f1xx_it.o"
+"button_long_press\stm32f1xx_hal_msp.o"
+"button_long_press\stm32f1xx_hal_gpio_ex.o"
+"button_long_press\stm32f1xx_hal_tim.o"
+"button_long_press\stm32f1xx_hal_tim_ex.o"
+"button_long_press\stm32f1xx_hal.o"
+"button_long_press\stm32f1xx_hal_rcc.o"
+"button_long_press\stm32f1xx_hal_rcc_ex.o"
+"button_long_press\stm32f1xx_hal_gpio.o"
+"button_long_press\stm32f1xx_hal_dma.o"
+"button_long_press\stm32f1xx_hal_cortex.o"
+"button_long_press\stm32f1xx_hal_pwr.o"
+"button_long_press\stm32f1xx_hal_flash.o"
+"button_long_press\stm32f1xx_hal_flash_ex.o"
+"button_long_press\stm32f1xx_hal_exti.o"
+"button_long_press\system_stm32f1xx.o"
+--strict --scatter "Button_Long_Press\Button_Long_Press.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Button_Long_Press.map" -o Button_Long_Press\Button_Long_Press.axf

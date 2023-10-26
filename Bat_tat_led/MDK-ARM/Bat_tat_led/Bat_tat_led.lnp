@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"bat_tat_led\startup_stm32f103xb.o"
+"bat_tat_led\main.o"
+"bat_tat_led\stm32f1xx_it.o"
+"bat_tat_led\stm32f1xx_hal_msp.o"
+"bat_tat_led\stm32f1xx_hal_gpio_ex.o"
+"bat_tat_led\stm32f1xx_hal_tim.o"
+"bat_tat_led\stm32f1xx_hal_tim_ex.o"
+"bat_tat_led\stm32f1xx_hal.o"
+"bat_tat_led\stm32f1xx_hal_rcc.o"
+"bat_tat_led\stm32f1xx_hal_rcc_ex.o"
+"bat_tat_led\stm32f1xx_hal_gpio.o"
+"bat_tat_led\stm32f1xx_hal_dma.o"
+"bat_tat_led\stm32f1xx_hal_cortex.o"
+"bat_tat_led\stm32f1xx_hal_pwr.o"
+"bat_tat_led\stm32f1xx_hal_flash.o"
+"bat_tat_led\stm32f1xx_hal_flash_ex.o"
+"bat_tat_led\stm32f1xx_hal_exti.o"
+"bat_tat_led\system_stm32f1xx.o"
+--strict --scatter "Bat_tat_led\Bat_tat_led.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Bat_tat_led.map" -o Bat_tat_led\Bat_tat_led.axf
